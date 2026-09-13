@@ -136,7 +136,7 @@ export function App() {
             <section className="status-line">
               <h1>{t("404 · 页面不存在")}</h1>
               <Button variant="outline" asChild>
-                <Link to="/">{t("返回概览")}</Link>
+                <Link to="/">{t("返回首页")}</Link>
               </Button>
             </section>
           }

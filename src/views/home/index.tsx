@@ -94,7 +94,7 @@ export function HomePage() {
     `${mobile}-${orderedTargets.map(({ target }) => target.name).join("|")}`,
   );
   useEffect(() => {
-    document.title = t("概览 - 一个机场 IP");
+    document.title = t("一个机场 IP 网络检测工具");
   }, []);
   const probes = useQueries({
     queries: [
