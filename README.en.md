@@ -19,7 +19,7 @@ A toolbox for IP lookups, network diagnostics, browser checks and AI service sta
 
 [中文](README.md) · **English**
 
-[Live demo](https://ip.huzhihui.com/) · [GitHub](https://github.com/zhihui-hu/one-ip)
+[Live demo](https://ip.ygjc.cc/) · [GitHub](https://github.com/mjiagou/one-ip)
 
 Click the button below for one-click deployment to Cloudflare.
 

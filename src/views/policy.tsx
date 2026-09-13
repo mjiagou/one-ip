@@ -1,8 +1,38 @@
 import { PageHeading, ToolCard } from "@/components/toolkit";
 import { t } from "@/i18n";
 
-export default function PolicyPage({ page }: { page: "terms" | "privacy" }) {
+export default function PolicyPage({
+  page,
+}: {
+  page: "terms" | "privacy" | "about";
+}) {
   const sections = {
+    about: [
+      [
+        t("项目简介"),
+        t(
+          "一个机场 IP 是一款专为网络工程师、开发者及极客打造的高性能网络诊断与安全工具箱。致力于提供高精度、便捷、透明的 IP 查询、网络路由与隐私安全检测服务。",
+        ),
+      ],
+      [
+        t("核心功能"),
+        t(
+          "本站支持全球 IPv4/IPv6 双栈探测、IP 归属与纯净度评分、网站分流出口路径审计、WebRTC 隐私泄露排查、深度浏览器环境指纹检测、全球多节点 Ping 延迟测试及主流 AI 平台可用性监控。",
+        ),
+      ],
+      [
+        t("使用须知与声明"),
+        t(
+          "本站所有探测数据仅供网络性能调试、网络安全自查与合法技术研究参考。本站不存储任何用户的敏感网络通信内容，请勿将本站工具用于任何违反法律法规或破坏第三方服务正常运行的活动。",
+        ),
+      ],
+      [
+        t("开源与致谢"),
+        t(
+          "本项目基于开源生态构建与部署，源码托管于 GitHub，感谢开源社区各位贡献者的支持。",
+        ),
+      ],
+    ],
     terms: [
       [
         t("服务范围"),
@@ -101,7 +131,13 @@ export default function PolicyPage({ page }: { page: "terms" | "privacy" }) {
   return (
     <div className="space-y-3">
       <PageHeading
-        title={page === "terms" ? t("使用条款") : t("隐私政策")}
+        title={
+          page === "terms"
+            ? t("使用条款")
+            : page === "privacy"
+              ? t("隐私政策")
+              : t("关于我们")
+        }
         description=""
       />
       {sections[page].map(([title, body]) => (
@@ -109,16 +145,47 @@ export default function PolicyPage({ page }: { page: "terms" | "privacy" }) {
           <p className="text-sm leading-6 text-muted-foreground">{body}</p>
         </ToolCard>
       ))}
-      <ToolCard title={t("联系作者")}>
-        <p className="mb-2 text-sm text-muted-foreground">
-          {t("如对本站使用或隐私有疑问，请通过邮箱联系作者。")}
+      <ToolCard title={t("联系方式")}>
+        <p className="mb-3 text-sm text-muted-foreground">
+          {t(
+            "如对本站使用、建议或合作有任何疑问，欢迎通过以下方式与我们联系：",
+          )}
         </p>
-        <a
-          className="text-sm text-primary hover:underline"
-          href="mailto:ip@huzhihui.com"
-        >
-          ip@huzhihui.com
-        </a>
+        <div className="space-y-1.5 text-sm">
+          <div>
+            <span className="text-muted-foreground">Telegram: </span>
+            <a
+              className="text-primary hover:underline"
+              href="https://t.me/yiyige163"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @yiyige163
+            </a>
+          </div>
+          <div>
+            <span className="text-muted-foreground">X (Twitter): </span>
+            <a
+              className="text-primary hover:underline"
+              href="https://x.com/ygjc_cc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @ygjc_cc
+            </a>
+          </div>
+          <div>
+            <span className="text-muted-foreground">GitHub: </span>
+            <a
+              className="text-primary hover:underline"
+              href="https://github.com/mjiagou/one-ip"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              mjiagou/one-ip
+            </a>
+          </div>
+        </div>
       </ToolCard>
     </div>
   );

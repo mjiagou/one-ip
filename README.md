@@ -21,7 +21,7 @@ IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。
 
 **中文** · [English](README.en.md)
 
-[在线体验](https://ip.huzhihui.com/) · [GitHub](https://github.com/zhihui-hu/one-ip)
+[在线体验](https://ip.ygjc.cc/) · [GitHub](https://github.com/mjiagou/one-ip)
 
 社区友链：[LINUX DO](https://linux.do/) · 真诚、友善、团结、专业。
 

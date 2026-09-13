@@ -150,17 +150,7 @@ export function AppLayout() {
         <footer className="app-footer">
           © {new Date().getFullYear()} 一个机场 IP ·{" "}
           <UnderlineHover asChild>
-            <a
-              href="https://huzhihui.com/blog/one-ip-guide"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("使用文档")}
-            </a>
-          </UnderlineHover>{" "}
-          ·{" "}
-          <UnderlineHover asChild>
-            <Link to="/docs/api">API</Link>
+            <Link to="/about">{t("关于我们")}</Link>
           </UnderlineHover>{" "}
           ·{" "}
           <UnderlineHover asChild>
@@ -173,7 +163,17 @@ export function AppLayout() {
           ·{" "}
           <UnderlineHover asChild>
             <a
-              href="https://github.com/zhihui-hu/one-ip"
+              href="https://x.com/ygjc_cc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              X
+            </a>
+          </UnderlineHover>{" "}
+          ·{" "}
+          <UnderlineHover asChild>
+            <a
+              href="https://github.com/mjiagou/one-ip"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 align-middle"
@@ -183,7 +183,13 @@ export function AppLayout() {
           </UnderlineHover>{" "}
           ·{" "}
           <UnderlineHover asChild>
-            <a href="mailto:ip@huzhihui.com">{t("联系作者")}</a>
+            <a
+              href="https://t.me/yiyige163"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TG: @yiyige163
+            </a>
           </UnderlineHover>
         </footer>
       </div>

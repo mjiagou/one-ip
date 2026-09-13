@@ -86,6 +86,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ip.ygjc.cc/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ip.ygjc.cc/terms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ip.ygjc.cc/privacy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ip.ygjc.cc/docs/api</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

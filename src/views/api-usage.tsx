@@ -53,14 +53,6 @@ export default function ApiUsagePage() {
         </a>
       </p>
       <ApiCodeBlock code={command} language="bash" />
-      <a
-        className="inline-block text-sm text-primary hover:underline"
-        href="https://huzhihui.com/blog/one-ip-guide"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {t("完整使用文档")} ↗
-      </a>
       <p className="text-sm leading-6 text-muted-foreground">
         {t(
           "添加 ?ip=1.1.1.1 可查询指定公网 IPv4 / IPv6；添加 ?format=text 返回终端文本。",

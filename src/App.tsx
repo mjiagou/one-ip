@@ -55,6 +55,7 @@ export function App() {
       <Route element={<AppLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="docs/api" element={<ApiUsagePage />} />
+        <Route path="about" element={<PolicyPage page="about" />} />
         <Route path="terms" element={<PolicyPage page="terms" />} />
         <Route path="privacy" element={<PolicyPage page="privacy" />} />
         <Route path="network" element={<ToolLayout group="network" />}>

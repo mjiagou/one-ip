@@ -1,7 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="220 258 820 820">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <title>一个机场 IP</title>
-  <defs><mask id="mark" maskUnits="userSpaceOnUse" x="220" y="258" width="820" height="820"><rect x="220" y="258" width="820" height="820" fill="white"/><g fill="black"><circle cx="437" cy="398" r="70"/>
-  <path d="M369 570 C369 480 503 480 503 570 V773 C425 786 369 756 369 706 Z"/>
-  <path d="M577 747 V669 C577 563 663 475 769 475 C877 475 964 561 964 667 C964 774 877 853 779 853 C742 853 710 842 683 824 V953 C683 1024 577 1024 577 953 V837 C477 877 343 863 301 781 C280 739 309 716 328 747 C380 854 589 809 691 695 C704 733 733 755 769 755 C816 755 853 717 853 668 C853 619 816 581 769 581 C726 581 698 607 678 650 C657 691 617 722 577 747 Z"/></g></mask></defs>
-  <rect x="220" y="258" width="820" height="820" fill="#1976d2" style="fill:oklch(0.5645 0.163 253.27)" mask="url(#mark)"/>
+  <defs>
+    <!-- Background Gradient: Deep Tech to Electric Blue -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+
+    <!-- Wing Facet Gradients -->
+    <linearGradient id="wingLeft" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+
+    <linearGradient id="keelLeft" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfdbfe" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <linearGradient id="keelRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <linearGradient id="wingRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Dimensionality -->
+    <filter id="planeShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="-4" dy="16" stdDeviation="18" flood-color="#0b1329" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" />
+
+  <!-- Subtle Top Highlight Rim -->
+  <rect width="508" height="508" x="2" y="2" rx="114" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2.5" />
+
+  <!-- IP Signal Radar Arcs (Representing Global IP Node Diagnostics) -->
+  <g opacity="0.38" stroke="#bae6fd" stroke-linecap="round" fill="none">
+    <path d="M 112 312 A 88 88 0 0 1 200 400" stroke-width="6" />
+    <path d="M 112 240 A 160 160 0 0 1 272 400" stroke-width="5" stroke-dasharray="14 10" />
+    <path d="M 112 168 A 232 232 0 0 1 344 400" stroke-width="4" stroke-dasharray="8 8" />
+  </g>
+
+  <!-- Central Origin Beacon (IP Station) -->
+  <circle cx="112" cy="400" r="14" fill="#ffffff" opacity="0.95" />
+  <circle cx="112" cy="400" r="28" fill="#38bdf8" opacity="0.3" />
+  <circle cx="174" cy="262" r="6" fill="#38bdf8" opacity="0.85" />
+  <circle cx="260" cy="336" r="6" fill="#38bdf8" opacity="0.85" />
+
+  <!-- Flight Contrail Lines -->
+  <line x1="230" y1="360" x2="160" y2="430" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
+  <line x1="256" y1="384" x2="206" y2="434" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+  <circle cx="140" cy="450" r="3.5" fill="#ffffff" opacity="0.6" />
+
+  <!-- The Flight Paper Plane (机场飞跃) -->
+  <g filter="url(#planeShadow)">
+    <!-- 4. Right Wing Outer Blade -->
+    <polygon points="420,92 300,310 348,396" fill="url(#wingRight)" />
+    <!-- 3. Right Keel Incline -->
+    <polygon points="420,92 240,330 300,310" fill="url(#keelRight)" />
+    <!-- 2. Left Keel Incline -->
+    <polygon points="420,92 255,275 240,330" fill="url(#keelLeft)" />
+    <!-- 1. Left Main Wing Blade (Highlight) -->
+    <polygon points="420,92 110,270 255,275" fill="url(#wingLeft)" />
+  </g>
 </svg>
