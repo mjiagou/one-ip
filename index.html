@@ -46,6 +46,7 @@
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" href="/icon.svg" as="image" type="image/svg+xml" />
   <script>
     // Classic ES5 script: IE cannot execute the application's module bundle.
     (function () {
@@ -101,6 +102,54 @@
       color: #171717;
       background: #fff;
     }
+
+    /* Pre-hydration skeleton: instant LCP & FCP with 0 CLS */
+    .app-skeleton {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 16px;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .app-skeleton-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+      margin-bottom: 12px;
+    }
+    .app-skeleton-nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 42px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      background: rgba(125, 125, 125, 0.07);
+      padding: 0 12px;
+    }
+    .app-skeleton-card {
+      border-radius: 14px;
+      border: 1px solid rgba(125, 125, 125, 0.12);
+      background: #fff;
+      padding: 24px;
+      min-height: 220px;
+      box-sizing: border-box;
+    }
+    .dark .app-skeleton-card {
+      background: #161b22;
+      border-color: #30363d;
+    }
+    .app-skeleton-bone {
+      background: rgba(125, 125, 125, 0.12);
+      border-radius: 6px;
+      animation: app-pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes app-pulse {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 0.35; }
+    }
   </style>
 </head>
 
@@ -111,7 +160,27 @@
     <a href="https://www.microsoft.com/edge">下载 Microsoft Edge</a>
   </div>
   <noscript>请启用 JavaScript，并使用现代浏览器访问本站。</noscript>
-  <div id="root"></div>
+  <div id="root">
+    <div class="app-skeleton" aria-hidden="true">
+      <div class="app-skeleton-header">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <img src="/icon.svg" width="28" height="28" alt="" style="display:block;" />
+          <span style="font-weight:600;font-size:15px;letter-spacing:-0.02em;">一个机场 IP</span>
+        </div>
+      </div>
+      <div class="app-skeleton-nav">
+        <div class="app-skeleton-bone" style="width:52px;height:20px;"></div>
+        <div class="app-skeleton-bone" style="width:52px;height:20px;"></div>
+        <div class="app-skeleton-bone" style="width:52px;height:20px;"></div>
+        <div class="app-skeleton-bone" style="width:52px;height:20px;"></div>
+      </div>
+      <div class="app-skeleton-card">
+        <div class="app-skeleton-bone" style="width:110px;height:14px;margin-bottom:18px;"></div>
+        <div class="app-skeleton-bone" style="width:260px;height:36px;margin-bottom:18px;"></div>
+        <div class="app-skeleton-bone" style="width:180px;height:14px;"></div>
+      </div>
+    </div>
+  </div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

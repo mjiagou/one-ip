@@ -1620,6 +1620,9 @@ body {
 .page-help-alert [data-slot="alert-description"] {
   color: inherit;
 }
+.home-ip-overview {
+  min-height: 200px;
+}
 .home-ip-overview > .home-connectivity-card {
   grid-column: 1 / -1;
 }
