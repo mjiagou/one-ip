@@ -150,6 +150,10 @@ export function AppLayout() {
         <footer className="app-footer">
           © {new Date().getFullYear()} 一个机场 IP ·{" "}
           <UnderlineHover asChild>
+            <Link to="/blog">{t("博客")}</Link>
+          </UnderlineHover>{" "}
+          ·{" "}
+          <UnderlineHover asChild>
             <Link to="/about">{t("关于我们")}</Link>
           </UnderlineHover>{" "}
           ·{" "}

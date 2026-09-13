@@ -35,6 +35,7 @@
     "jotai": "latest",
     "leaflet": "^1.9.4",
     "lucide-react": "latest",
+    "marked": "^18.0.13",
     "nprogress": "latest",
     "qrcode.react": "^4.2.0",
     "radix-ui": "latest",
