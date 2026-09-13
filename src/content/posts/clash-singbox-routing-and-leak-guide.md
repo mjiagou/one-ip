@@ -2,7 +2,7 @@
 title: Clash 与 Sing-box 网站分流实战：如何准确测试路由规则与防止出口泄露
 date: 2026-09-13
 description: 详解 Clash Verge、Clash Meta 与 Sing-box 核心的分流机制（Rule-based Routing），手把手教你如何通过分流出口审计工具排查 DNS 泄露与规则失效问题。
-tags: [Clash分流, Sing-box, 路由规则, 节点出口, 网络检测]
+tags: [Clash分流, Sing-box]
 author: 一个机场
 ---
 

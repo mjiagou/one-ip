@@ -2,7 +2,7 @@
 title: 深入了解 WebRTC 泄露与浏览器指纹：如何保护你的网络隐私
 date: 2026-09-12
 description: 解析 WebRTC 的 STUN 连接机制为什么会暴露真实 IP，以及 FingerprintJS 与 CreepJS 是如何识别浏览器特征的。
-tags: [WebRTC, 浏览器指纹, 网络安全, 隐私保护]
+tags: [WebRTC, 浏览器指纹]
 author: 一个机场
 ---
 

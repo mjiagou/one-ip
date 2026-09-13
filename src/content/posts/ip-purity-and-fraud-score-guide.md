@@ -2,7 +2,7 @@
 title: IP 纯净度与欺诈分深度检测指南：原生 IP、住宅 IP 与机房 IP 的辨别与风控规避
 date: 2026-09-13
 description: 深度解析 IP 纯净度、欺诈分（Fraud Score）评估机制，详解原生住宅 IP（ISP）与数据中心机房 IP（IDC）的核心区别，教你如何利用一个机场 IP 工具箱排查网络风控。
-tags: [IP纯净度, 住宅IP, 欺诈分检测, 网络风控, 原生IP]
+tags: [IP纯净度, 住宅IP]
 author: 一个机场
 ---
 

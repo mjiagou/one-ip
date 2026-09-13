@@ -2,7 +2,7 @@
 title: ChatGPT 与 Claude 提示 IP 受限（1020 / Unsupported Country）终极排查指南
 date: 2026-09-13
 description: 遇到 ChatGPT 访问被拒、Cloudflare 1020 报错或 Claude 提示 Unsupported Country 怎么办？全方位剖析原因与排查步骤，助你迅速恢复 AI 访问。
-tags: [ChatGPT, Claude, 报错排查, 1020解决, AI连通性]
+tags: [ChatGPT, Claude]
 author: 一个机场
 ---
 
