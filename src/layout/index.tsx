@@ -83,7 +83,7 @@ export function AppLayout() {
           <Link
             to="/"
             className="flex items-center gap-2 text-sm font-semibold"
-            aria-label={t("IP 网络工具概览")}
+            aria-label={t("一个机场 IP 网络工具概览")}
           >
             <img src="/icon.svg" width="24" height="24" alt="" />
           </Link>
@@ -114,7 +114,7 @@ export function AppLayout() {
               )}
               <Link
                 to="/"
-                aria-label={t("IP 网络工具概览")}
+                aria-label={t("一个机场 IP 网络工具概览")}
                 className="site-home-link flex size-9 shrink-0 items-center justify-center rounded-lg focus-visible:outline-2 focus-visible:outline-ring"
               >
                 <img src="/icon.svg" alt="" width="32" height="32" />
@@ -148,7 +148,7 @@ export function AppLayout() {
           </Tabs.Content>
         </AnimatedSegmentedTabs>
         <footer className="app-footer">
-          © {new Date().getFullYear()} IP ·{" "}
+          © {new Date().getFullYear()} 一个机场 IP ·{" "}
           <UnderlineHover asChild>
             <a
               href="https://huzhihui.com/blog/one-ip-guide"

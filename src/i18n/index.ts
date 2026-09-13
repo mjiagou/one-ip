@@ -53,13 +53,13 @@ export function setLocale(next: Locale) {
 
 export function initializeLocale() {
   document.documentElement.lang = locale;
-  document.title = t("IP 网络工具概览");
+  document.title = t("一个机场 IP - 极客网络工具箱");
   const description = document.querySelector('meta[name="description"]');
   if (description)
     description.setAttribute(
       "content",
       t(
-        "IP 查询、网站分流、WebRTC 检测、全球 Ping、服务状态和 WHOIS 查询工具。",
+        "一个机场 IP 是一款专为网络工程师与极客打造的高性能网络与安全诊断工具箱。支持全球高精度 IPv4/IPv6 双栈查询、IP 纯净度与欺诈风险评估、多线路分流出口审计、WebRTC 与浏览器环境深度指纹排查、全球分布式 Ping 节点测速及主流 AI 服务可用性监测。",
       ),
     );
 }

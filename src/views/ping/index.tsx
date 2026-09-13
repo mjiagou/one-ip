@@ -53,7 +53,7 @@ export default function PingPage() {
   const [stopped, setStopped] = useState(false);
   const controller = useRef<AbortController | null>(null);
   useEffect(() => {
-    document.title = t("全球 Ping - IP 网络工具");
+    document.title = t("全球 Ping - 一个机场 IP");
     return () => controller.current?.abort();
   }, []);
   const catalog = useQuery({
