@@ -2,7 +2,7 @@ import { t } from "@/i18n";
 import { aiPlatforms } from "@/views/ai/platforms";
 
 export const navigationRoutes = [
-  { value: "/", label: t("概览"), short: t("概览") },
+  { value: "/", label: t("首页"), short: t("首页") },
   { value: "/ai/", label: t("AI 检测"), short: "AI" },
   { value: "/status/", label: t("服务状态"), short: t("状态") },
   { value: "/network/", label: t("网络检测"), short: t("网络") },

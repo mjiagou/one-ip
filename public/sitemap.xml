@@ -116,6 +116,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ip.ygjc.cc/blog/ip-purity-and-fraud-score-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ip.ygjc.cc/blog/clash-singbox-routing-and-leak-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ip.ygjc.cc/blog/claude-chatgpt-ip-block-troubleshooting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ip.ygjc.cc/docs/api</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
