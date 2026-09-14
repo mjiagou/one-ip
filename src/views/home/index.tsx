@@ -227,7 +227,7 @@ export function HomePage() {
                 <Link
                   to={`/network/ip/${encodeURIComponent(data.ip)}`}
                   aria-label={`${label} · ${t("IP 信息查询")}`}
-                  className="absolute inset-0 z-10 rounded-[inherit] transition-colors hover:bg-primary/[0.025] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring"
+                  className="absolute inset-0 z-10 rounded-[inherit] transition-colors hover:bg-primary/2.5 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring"
                 />
               )}
               <CardContent className="primary-ip-block">

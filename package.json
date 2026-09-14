@@ -19,7 +19,8 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "prepare": "husky",
-    "browser:build": "node scripts/build-browser-diagnostics.mjs"
+    "browser:build": "node scripts/build-browser-diagnostics.mjs",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "5.2.0",
